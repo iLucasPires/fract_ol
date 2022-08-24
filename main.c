@@ -43,7 +43,7 @@ void draw_fractal(t_mlx *img, t_fractal *data, int (*fractal)(t_fractal *data))
 void init(t_fractal *data, t_mlx *img)
 {
 	img->mlx = mlx_init();
-	img->mlx_win = mlx_new_window(img->mlx, WIDTH, HEIGHT, "jorge corno jkkhkjhkjh!");
+	img->mlx_win = mlx_new_window(img->mlx, WIDTH, HEIGHT, "my_fractol");
 	img->img = mlx_new_image(img->mlx, WIDTH, HEIGHT);
 	img->addr = mlx_get_data_addr(img->img, &img->bits_per_pixel, &img->line_length, &img->endian);
 	draw_fractal(img, data, mandelbrot);
