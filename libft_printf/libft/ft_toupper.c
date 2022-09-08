@@ -1,21 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   utils.c                                            :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: coder <coder@student.42.fr>                +#+  +:+       +#+        */
+/*   By: lpires-n <lpires-n@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/20 14:37:10 by coder             #+#    #+#             */
-/*   Updated: 2022/08/20 14:37:17 by coder            ###   ########.fr       */
+/*   Created: 2022/06/02 08:29:07 by lpires-n          #+#    #+#             */
+/*   Updated: 2022/06/04 06:25:23 by lpires-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-double ft_pow(double number)
+int	ft_toupper(int c)
 {
-	return (number * number);
-} 
- 
-double find_c(float min, float max, float axle , int size)
-{
-	return (min + axle * (max - min) / size);
-}  
+	if (c >= 97 && c <= 122)
+		return (c - 32);
+	return (c);
+}
