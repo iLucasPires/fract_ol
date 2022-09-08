@@ -18,6 +18,7 @@ typedef struct s_var
 	double max[2];
 	double center[2];
 	int color[3];
+	double complex[4];
 	int max_interation;
 	int (*fractal)(double *complex, int max_interation);
 } t_var;

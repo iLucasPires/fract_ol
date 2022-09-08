@@ -36,7 +36,6 @@ int	draw_fractal(t_mlx *mlx, t_var *var)
 {
 	int axle[2];
 	int result;
-	double complex[2];
 
 	axle[R] = 0;
 	while (++axle[0] < WIDTH)
@@ -46,9 +45,9 @@ int	draw_fractal(t_mlx *mlx, t_var *var)
 		{
 			var->center[R] = var->max[R] - var->min[R];
 			var->center[I] = var->max[I] - var->min[I];
-			complex[R] = var->min[R] + axle[R] * var->center[R] / WIDTH;
-			complex[I] = var->min[I] + axle[I] * var->center[I] / HEIGHT;
-			result = var->fractal(complex, var->max_interation);
+			var->complex[R] = var->min[R] + axle[R] * var->center[R] / WIDTH;
+			var->complex[I] = var->min[I] + axle[I] * var->center[I] / HEIGHT;
+			result = var->fractal(var->complex, var->max_interation);
 			pix_put_to_img(mlx, var, axle, result);
 		}
 	}

@@ -34,8 +34,8 @@ int	julia(double *complex, int max_iteration)
 	{
 		square[I] = number[I] * number[I];
 		square[R] = number[R] * number[R];
-		number[I] = 2 * number[I] * number[R] + 0.65;
-		number[R] = square[R] - square[I] + 0.532;
+		number[I] = 2 * number[I] * number[R] + complex[2];
+		number[R] = square[R] - square[I] + complex[3];
 		if (square[R] + square[I] > 4)
 			break ;
 	}

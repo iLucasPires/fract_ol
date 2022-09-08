@@ -9,6 +9,8 @@ void init_var(t_var *var)
 	var->min[I] = -1.5;
 	var->max[R] = 1.5;
 	var->max[I] = 1.5;
+	var->complex[R] = 0;
+	var->complex[I] = 0;
 	var->color[0] = 255;
 	var->color[1] = 255;
 	var->color[2] = 255;
