@@ -1,16 +1,26 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   fractol_program.c                                  :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lpires-n <lpires-n@student.42sp.org.br>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/09/09 14:59:05 by lpires-n          #+#    #+#             */
+/*   Updated: 2022/09/09 17:47:47 by lpires-n         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/libraries.h"
 
 int	main(int argc, char **argv)
 {
-	t_data data;
+	t_data	data;
 
-	init_mlx(&data.mlx);
+	handle_args(argc, argv, &data.var);
 	init_var(&data.var);
-	handle_args(argc, argv, &data);
-	draw_fractal(&data.mlx, &data.var);
-	mlx_put_image_to_window(data.mlx.mlx, data.mlx.win, data.mlx.img, 0, 0);
+	init_mlx(&data.mlx);
+	re_render(&data);
 	handle_hooks(&data);
 	mlx_loop(data.mlx.mlx);
-
 	return (0);
 }

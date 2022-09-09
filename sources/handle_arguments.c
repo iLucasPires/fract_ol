@@ -1,35 +1,32 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   handle_arguments.c                                 :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lpires-n <lpires-n@student.42sp.org.br>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/09/09 02:59:06 by lpires-n          #+#    #+#             */
+/*   Updated: 2022/09/09 17:43:43 by lpires-n         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/libraries.h"
 
-static void	types_error(int identifier)
+void	handle_args(int argc, char **argv, t_var *var)
 {
-	if (identifier == 1)
+	if (argc == 2 && !ft_strncmp(argv[1], MANDELBROT_ARG, 10))
+		var->fractal = mandelbrot;
+	else if (argc >= 2 && !ft_strncmp(argv[1], JULIA_ARG, 10))
 	{
-		ft_printf("Usage for julia: ./fractol julia [real] [imag] \n");
-		ft_printf("Usage for mandelbrot: ./fractol mandelbrot\n");
-		ft_printf("Usage for burningship: ./fractol burningship\n");
-		exit(0);
-	}
-	else if (identifier == 2)
-	{
-		ft_printf("Error: Invalid fractal or invalid number\n");
-		exit(0);
-	}
-}
-
-
-void	handle_args(int argc, char **argv, t_data *data)
-{
-	if (argc == 2)
-	{
-		if (!ft_strncmp(argv[1], "mandelbrot", 11) || argv[1][0] == 'm')
-			data->var.fractal = mandelbrot;
-		else if (!ft_strncmp(argv[1], "julia", 6) || argv[1][0] == 'j')
-			data->var.fractal = julia;
-		else if (!ft_strncmp(argv[1], "burningship", 12) || argv[1][0] == 'b')
-			data->var.fractal = burningship;
+		var->fractal = julia;
+		if (argc == 4 && ft_isnumber(argv[2]) && ft_isnumber(argv[3]))
+		{
+			var->complex[CONST_R] = ft_atof(argv[2]);
+			var->complex[CONST_I] = ft_atof(argv[3]);
+		}
 		else
-			types_error(2);
+			error_argument(MISSING_ARG);
 	}
 	else
-		types_error(1);
+		error_argument(INVALID_FRACTAL);
 }
