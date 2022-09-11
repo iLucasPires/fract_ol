@@ -6,7 +6,7 @@
 /*   By: lpires-n <lpires-n@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/09 14:58:52 by lpires-n          #+#    #+#             */
-/*   Updated: 2022/09/11 19:13:32 by lpires-n         ###   ########.fr       */
+/*   Updated: 2022/09/12 00:30:39 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,6 @@ void	zoom_fractal(int key, int x, int y, t_var *var)
 		if (var->max_iteration > 100)
 			var->max_iteration -= 10;
 	}
-	ft_printf("%i\n", var->max_iteration);
 }
 
 int	set_color(int i, t_var *var)
