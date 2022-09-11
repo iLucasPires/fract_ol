@@ -6,7 +6,7 @@
 /*   By: lpires-n <lpires-n@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/09 14:58:48 by lpires-n          #+#    #+#             */
-/*   Updated: 2022/09/10 19:09:30 by lpires-n         ###   ########.fr       */
+/*   Updated: 2022/09/11 13:26:08 by lpires-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ static int	handle_key(int key, t_data *data)
 	}
 	else if (key == ESC)
 		handle_close(data);
-	else if (key == 106)
+	else if (key == C)
 	{
 		data->var.color += 1;
 		re_render(data);

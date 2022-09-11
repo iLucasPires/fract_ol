@@ -6,7 +6,7 @@
 /*   By: lpires-n <lpires-n@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/09 14:59:12 by lpires-n          #+#    #+#             */
-/*   Updated: 2022/09/10 21:56:13 by lpires-n         ###   ########.fr       */
+/*   Updated: 2022/09/11 05:36:59 by lpires-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,8 +47,10 @@ int	draw_fractal(t_mlx *mlx, t_var *var)
 		{
 			var->center[R] = var->max[R] - var->min[R];
 			var->center[I] = var->max[I] - var->min[I];
-			var->complex[R] = var->min[R] + axle[R] * var->center[R] / WIDTH;
-			var->complex[I] = var->min[I] + axle[I] * var->center[I] / HEIGHT;
+			var->complex[R] = var->min[R] + (var->center[R] * (axle[R]
+						/ (double)WIDTH));
+			var->complex[I] = var->min[I] + (var->center[I] * (axle[I]
+						/ (double)HEIGHT));
 			result = var->fractal(var->complex, var->max_iteration);
 			pix_put_to_img(mlx, var, axle, result);
 		}

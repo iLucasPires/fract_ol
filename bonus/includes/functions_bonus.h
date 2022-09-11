@@ -6,7 +6,7 @@
 /*   By: lpires-n <lpires-n@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/09 15:50:53 by lpires-n          #+#    #+#             */
-/*   Updated: 2022/09/10 21:34:05 by lpires-n         ###   ########.fr       */
+/*   Updated: 2022/09/11 05:07:21 by lpires-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,4 @@ void	erro_ptr(void *ptr, const char *msg);
 void	error_argument(int err);
 int		set_color(int i, t_var *var);
 void	menu(t_mlx *mlx);
-void	init_windows(t_mlx *mlx);
-void	int_img(t_mlx *mlx);
 #endif

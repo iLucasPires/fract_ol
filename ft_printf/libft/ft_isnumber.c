@@ -6,7 +6,7 @@
 /*   By: lpires-n <lpires-n@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/09 01:50:34 by lpires-n          #+#    #+#             */
-/*   Updated: 2022/09/09 15:46:49 by lpires-n         ###   ########.fr       */
+/*   Updated: 2022/09/11 14:56:11 by lpires-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int	ft_isnumber(const char *s)
 			verify++;
 		if (verify > 1)
 			return (0);
-		if (!ft_isdigit(*s) && *s != '.')
+		if (!ft_isdigit(*s) && *s != '.' && *s)
 			return (0);
 		s++;
 	}

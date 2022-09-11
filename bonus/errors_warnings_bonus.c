@@ -6,7 +6,7 @@
 /*   By: lpires-n <lpires-n@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/09 13:53:59 by lpires-n          #+#    #+#             */
-/*   Updated: 2022/09/10 20:59:59 by lpires-n         ###   ########.fr       */
+/*   Updated: 2022/09/11 14:43:10 by lpires-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,9 +35,10 @@ void	error_argument(int err)
 	else if (err == INVALID_FRACTAL)
 	{
 		ft_printf("\033[0;31mError: Invalid fractal name\n");
-		ft_printf("\033[0;37mUsage: ./fractol [fractal name]\n");
 		ft_printf("\033[0;35mAvailable fractals\n");
-		ft_printf("[1] mandelbrot\n[2] julia\n[3] burningship\n");
+		ft_printf("./fractol mandelbrot\n");
+		ft_printf("./fractol julia [number] [number]\n");
+		ft_printf("./fractol burningship\n");
 	}
 	exit(EXIT_FAILURE);
 }
@@ -46,6 +47,7 @@ void	menu(t_mlx *mlx)
 {
 	mlx_string_put(mlx->mlx, mlx->win, 10, 20, 0x00FFFFFF, "Fractol");
 	mlx_string_put(mlx->mlx, mlx->win, 10, 40, 0x00FFFFFF, "Zoom: Scroll");
-	mlx_string_put(mlx->mlx, mlx->win, 10, 60, 0x00FFFFFF, "Reset: R");
-	mlx_string_put(mlx->mlx, mlx->win, 10, 80, 0x00FFFFFF, "Exit: ESC");
+	mlx_string_put(mlx->mlx, mlx->win, 10, 60, 0x00FFFFFF, "Move: Arrows");
+	mlx_string_put(mlx->mlx, mlx->win, 10, 80, 0x00FFFFFF, "Color: C");
+	mlx_string_put(mlx->mlx, mlx->win, 10, 100, 0x00FFFFFF, "Exit: ESC");
 }

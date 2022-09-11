@@ -16,35 +16,35 @@ SRC =		$(addprefix $(SRC_DIR)/, $(SRC_FILES))
 
 BONUS =		$(addprefix $(OBJ_DIR)/, $(BONUS_FILES:.c=.o))
 OBJ =		$(addprefix $(OBJ_DIR)/, $(SRC_FILES:.c=.o))
-CFLAGS =	-g3 -Imlx -Lmlx -lmlx -lXext -lX11 -lm -Wall -Wextra -Werror
+CFLAGS =	-g3 -O3 -Imlx -Lmlx -lmlx -lXext -lX11 -lm -Wall -Wextra -Werror
 
 all: $(NAME)
 
 bonus:
-	@make OBJ="$(BONUS)" all
+	@make OBJ="$(BONUS)" all --no-print-directory
 
 $(NAME): $(OBJ) $(LIBFT)
-	@cc $(OBJ) $(LIBFT) $(CFLAGS) -o $(NAME)
+	cc $(OBJ) $(LIBFT) $(CFLAGS) -o $(NAME)
 
 $(LIBFT):
 	@make -C $(LIBFT_DIR)
 
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c 
 	@mkdir -p $(OBJ_DIR)
-	@cc -c $< -o $@
+	cc -c $< -o $@
 
 $(OBJ_DIR)/%.o: $(BONUS_DIR)/%.c
-	@mkdir -p $(OBJ_DIR)
-	@cc -c $< -o $@
+	mkdir -p $(OBJ_DIR)
+	cc -c $< -o $@
 
 clean:
-	@rm -rf $(OBJ_DIR)
-	@make clean -C $(LIBFT_DIR)
+	rm -rf $(OBJ_DIR)
+	make clean -C $(LIBFT_DIR)
 
 fclean: clean
-	@rm -f $(NAME)
-	@rm -f $(LIBFT)
-	@make fclean -C $(LIBFT_DIR)
+	rm -f $(NAME)
+	rm -f $(LIBFT)
+	make fclean -C $(LIBFT_DIR)
 
 re: fclean all
 
