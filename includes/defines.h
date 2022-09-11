@@ -6,7 +6,7 @@
 /*   By: lpires-n <lpires-n@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/09 15:50:47 by lpires-n          #+#    #+#             */
-/*   Updated: 2022/09/11 13:51:46 by lpires-n         ###   ########.fr       */
+/*   Updated: 2022/09/12 00:41:13 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@
 # define CONST_I 3
 # define WIDTH 800
 # define HEIGHT 600
-# define TITLE "Fractol"
 # define MISSING_ARG 1
 # define INVALID_ARG 2
 # define INVALID_FRACTAL 3

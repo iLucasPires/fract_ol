@@ -6,7 +6,7 @@
 /*   By: lpires-n <lpires-n@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/09 15:50:47 by lpires-n          #+#    #+#             */
-/*   Updated: 2022/09/10 20:52:50 by lpires-n         ###   ########.fr       */
+/*   Updated: 2022/09/12 00:40:41 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@
 # define CONST_I 3
 # define WIDTH 800
 # define HEIGHT 600
-# define TITLE "Fractol"
 # define MANDELBROT 1
 # define JULIA 2
 # define MISSING_ARG 1
