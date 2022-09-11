@@ -6,7 +6,7 @@
 /*   By: lpires-n <lpires-n@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/09 14:58:52 by lpires-n          #+#    #+#             */
-/*   Updated: 2022/09/11 16:17:53 by lpires-n         ###   ########.fr       */
+/*   Updated: 2022/09/11 19:13:32 by lpires-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,21 +65,21 @@ int	set_color(int i, t_var *var)
 
 	if (var->color == 1)
 	{
-		rbg[0] = (i * 25 / (var->max_iteration / 2));
-		rbg[1] = (i * 255 / (var->max_iteration / 2));
-		rbg[2] = (i * 55 / (var->max_iteration / 2));
+		rbg[0] = sin(0.1 * i + 0) * 127 + 128;
+		rbg[1] = sin(0.1 * i + 2) * 127 + 128;
+		rbg[2] = sin(0.1 * i + 4) * 127 + 128;
 	}
 	else if (var->color == 2)
 	{
-		rbg[0] = (i * 255 / (var->max_iteration / 2));
-		rbg[1] = (i * 55 / (var->max_iteration / 2));
-		rbg[2] = (i * 25 / (var->max_iteration / 2));
+		rbg[0] = sin(0.1 * i + 5) * 127 + 128;
+		rbg[1] = sin(0.1 * i + 6) * 127 + 128;
+		rbg[2] = sin(0.1 * i + 7) * 127 + 128;
 	}
 	else if (var->color == 3)
 	{
-		rbg[0] = (i * 55 / (var->max_iteration / 2));
-		rbg[1] = (i * 25 / (var->max_iteration / 2));
-		rbg[2] = (i * 255 / (var->max_iteration / 2));
+		rbg[0] = sin(0.1 * i + 8) * 127 + 128;
+		rbg[1] = sin(0.1 * i + 9) * 127 + 128;
+		rbg[2] = sin(0.1 * i + 0) * 127 + 128;
 	}
 	if (var->color == 4)
 		var->color = 1;

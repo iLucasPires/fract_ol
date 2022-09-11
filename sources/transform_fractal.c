@@ -6,7 +6,7 @@
 /*   By: lpires-n <lpires-n@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/09 14:58:52 by lpires-n          #+#    #+#             */
-/*   Updated: 2022/09/11 15:52:41 by lpires-n         ###   ########.fr       */
+/*   Updated: 2022/09/11 19:14:29 by lpires-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,8 +37,8 @@ int	set_color(int i, t_var *var)
 {
 	int	rbg[3];
 
-	rbg[0] = (i * 25 / (var->max_iteration / 2));
-	rbg[1] = (i * 255 / (var->max_iteration / 2));
-	rbg[2] = (i * 55 / (var->max_iteration / 2));
+	rbg[0] = sin(0.1 * i + 5) * 127 + 128;
+	rbg[1] = sin(0.1 * i + 6) * 127 + 128;
+	rbg[2] = sin(0.1 * i + 7) * 127 + 128;
 	return (rbg[0] << 16 | rbg[1] << 8 | rbg[2]);
 }
