@@ -6,12 +6,11 @@
 /*   By: lpires-n <lpires-n@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/09 14:58:48 by lpires-n          #+#    #+#             */
-/*   Updated: 2022/09/09 19:09:38 by lpires-n         ###   ########.fr       */
+/*   Updated: 2022/09/10 19:09:30 by lpires-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-#include "bonus.h"
+#include "includes/libraries_bonus.h"
 
 static int	handle_mouse(int key, int x, int y, t_data *data)
 {
@@ -45,6 +44,11 @@ static int	handle_key(int key, t_data *data)
 	}
 	else if (key == ESC)
 		handle_close(data);
+	else if (key == 106)
+	{
+		data->var.color += 1;
+		re_render(data);
+	}
 	return (0);
 }
 

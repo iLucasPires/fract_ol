@@ -6,11 +6,11 @@
 /*   By: lpires-n <lpires-n@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/09 13:53:59 by lpires-n          #+#    #+#             */
-/*   Updated: 2022/09/09 18:59:43 by lpires-n         ###   ########.fr       */
+/*   Updated: 2022/09/10 20:59:59 by lpires-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "bonus.h"
+#include "includes/libraries_bonus.h"
 
 void	erro_ptr(void *ptr, const char *msg)
 {
@@ -37,7 +37,15 @@ void	error_argument(int err)
 		ft_printf("\033[0;31mError: Invalid fractal name\n");
 		ft_printf("\033[0;37mUsage: ./fractol [fractal name]\n");
 		ft_printf("\033[0;35mAvailable fractals\n");
-		ft_printf("[1] mandelbrot\n[2] julia\n[3] burning_ship\n");
+		ft_printf("[1] mandelbrot\n[2] julia\n[3] burningship\n");
 	}
 	exit(EXIT_FAILURE);
+}
+
+void	menu(t_mlx *mlx)
+{
+	mlx_string_put(mlx->mlx, mlx->win, 10, 20, 0x00FFFFFF, "Fractol");
+	mlx_string_put(mlx->mlx, mlx->win, 10, 40, 0x00FFFFFF, "Zoom: Scroll");
+	mlx_string_put(mlx->mlx, mlx->win, 10, 60, 0x00FFFFFF, "Reset: R");
+	mlx_string_put(mlx->mlx, mlx->win, 10, 80, 0x00FFFFFF, "Exit: ESC");
 }

@@ -6,32 +6,45 @@
 /*   By: lpires-n <lpires-n@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/09 12:56:33 by lpires-n          #+#    #+#             */
-/*   Updated: 2022/09/09 19:00:14 by lpires-n         ###   ########.fr       */
+/*   Updated: 2022/09/10 21:58:11 by lpires-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "bonus.h"
+#include "includes/libraries_bonus.h"
 
 void	init_var(t_var *var)
 {
-	var->max_interation = 100;
-	var->min[R] = -1.5;
+	var->max_iteration = 100;
+	var->min[R] = -2.0;
 	var->min[I] = -1.5;
-	var->max[R] = 1.5;
-	var->max[I] = 1.5;
+	var->max[R] = 2.0;
+	var->max[I] = var->min[I] + (var->max[R] - var->min[R]) * HEIGHT / WIDTH;
 	var->complex[R] = 0;
 	var->complex[I] = 0;
+	var->color = 1;
+}
+
+void	int_img(t_mlx *mlx)
+{
+	mlx->img = mlx_new_image(mlx->mlx, WIDTH, HEIGHT);
+	erro_ptr(mlx->img, "mlx_new_image");
+	mlx->addr = mlx_get_data_addr(mlx->img, &mlx->bpp, &mlx->line_len,
+			&mlx->endian);
+	erro_ptr(mlx->addr, "mlx_get_data_addr");
+}
+
+void	init_windows(t_mlx *mlx)
+{
+	mlx->mlx = mlx_init();
+	erro_ptr(mlx->mlx, "mlx_init");
+	mlx->win = mlx_new_window(mlx->mlx, WIDTH, HEIGHT, "fractol");
+	erro_ptr(mlx->win, "mlx_new_window");
 }
 
 void	init_mlx(t_mlx *mlx)
 {
 	mlx->mlx = mlx_init();
 	erro_ptr(mlx->mlx, "mlx_init");
-	mlx->win = mlx_new_window(mlx->mlx, WIDTH, HEIGHT, TITLE);
-	erro_ptr(mlx->win, "mlx_new_window");
-	mlx->img = mlx_new_image(mlx->mlx, WIDTH, HEIGHT);
-	erro_ptr(mlx->img, "mlx_new_image");
-	mlx->addr = mlx_get_data_addr(mlx->img, &mlx->bpp, &mlx->line_len,
-			&mlx->endian);
-	erro_ptr(mlx->addr, "mlx_get_data_addr");
+	init_windows(mlx);
+	int_img(mlx);
 }

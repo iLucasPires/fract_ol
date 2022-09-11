@@ -6,7 +6,7 @@
 /*   By: lpires-n <lpires-n@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/09 15:50:47 by lpires-n          #+#    #+#             */
-/*   Updated: 2022/09/09 18:00:55 by lpires-n         ###   ########.fr       */
+/*   Updated: 2022/09/10 20:52:53 by lpires-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,6 @@
 # define INVALID_FRACTAL 3
 # define MANDELBROT_ARG "mandelbrot"
 # define JULIA_ARG "julia"
+# define ESC 65307
 
 #endif

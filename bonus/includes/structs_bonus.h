@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   structs.h                                          :+:      :+:    :+:   */
+/*   structs_bonus.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lpires-n <lpires-n@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/09 15:53:33 by lpires-n          #+#    #+#             */
-/*   Updated: 2022/09/11 02:26:55 by lpires-n         ###   ########.fr       */
+/*   Updated: 2022/09/10 21:54:49 by lpires-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef STRUCTS_H
-# define STRUCTS_H
+#ifndef STRUCTS_BONUS_H
+# define STRUCTS_BONUS_H
 
 typedef struct s_mlx
 {
@@ -26,13 +26,13 @@ typedef struct s_mlx
 
 typedef struct s_var
 {
-	int		axle[2];
+	int		color;
 	double	min[2];
 	double	max[2];
 	double	center[2];
 	double	complex[4];
 	int		max_iteration;
-	int		(*fractal)(double *complex, int max_interation);
+	int		(*fractal)(double *complex, int max_iteration);
 }			t_var;
 
 typedef struct s_data

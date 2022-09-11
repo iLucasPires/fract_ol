@@ -6,11 +6,11 @@
 /*   By: lpires-n <lpires-n@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/09 14:58:57 by lpires-n          #+#    #+#             */
-/*   Updated: 2022/09/09 18:59:15 by lpires-n         ###   ########.fr       */
+/*   Updated: 2022/09/10 15:15:39 by lpires-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "bonus.h"
+#include "includes/libraries_bonus.h"
 
 int	mandelbrot(double *complex, int max_iteration)
 {

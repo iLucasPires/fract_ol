@@ -6,7 +6,7 @@
 /*   By: lpires-n <lpires-n@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/09 14:58:48 by lpires-n          #+#    #+#             */
-/*   Updated: 2022/09/09 17:25:19 by lpires-n         ###   ########.fr       */
+/*   Updated: 2022/09/10 05:51:04 by lpires-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,11 @@
 
 static int	handle_mouse(int key, int x, int y, t_data *data)
 {
+	data->var.axle[R] = x;
+	data->var.axle[I] = y;
 	if (key == 4 || key == 5)
 	{
-		zoom_fractal(key, x, y, &data->var);
+		zoom_fractal(key, &data->var);
 		re_render(data);
 	}
 	return (0);

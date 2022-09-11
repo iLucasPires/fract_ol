@@ -6,12 +6,11 @@
 /*   By: lpires-n <lpires-n@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/09 02:59:06 by lpires-n          #+#    #+#             */
-/*   Updated: 2022/09/09 18:26:59 by lpires-n         ###   ########.fr       */
+/*   Updated: 2022/09/10 15:15:28 by lpires-n         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/libraries.h"
-#include "./bonus.h"
+#include "includes/libraries_bonus.h"
 
 void	handle_args(int argc, char **argv, t_var *var)
 {
