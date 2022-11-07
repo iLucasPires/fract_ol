@@ -16,7 +16,7 @@
 
 int		julia(double *complex, int max_iteration);
 int		mandelbrot(double *complex, int max_iteration);
-void	re_render(t_data *data);
+int		re_render(t_data *data);
 int		handle_hooks(t_data *data);
 int		draw_fractal(t_mlx *mlx, t_var *var);
 void	init_mlx(t_mlx *mlx);

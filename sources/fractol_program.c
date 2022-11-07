@@ -19,7 +19,6 @@ int	main(int argc, char **argv)
 	handle_args(argc, argv, &data.var);
 	init_var(&data.var);
 	init_mlx(&data.mlx);
-	re_render(&data);
 	handle_hooks(&data);
 	mlx_loop(data.mlx.mlx);
 	return (0);

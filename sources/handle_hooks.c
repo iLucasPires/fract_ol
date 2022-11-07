@@ -45,5 +45,6 @@ int	handle_hooks(t_data *data)
 	mlx_hook(data->mlx.win, 17, 0, handle_close, data);
 	mlx_mouse_hook(data->mlx.win, handle_mouse, data);
 	mlx_key_hook(data->mlx.win, handle_key, data);
+	mlx_expose_hook(data->mlx.win, re_render, data);
 	return (0);
 }

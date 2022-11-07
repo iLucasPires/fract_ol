@@ -12,12 +12,13 @@
 
 #include "../includes/libraries.h"
 
-void	re_render(t_data *data)
+int	re_render(t_data *data)
 {
-	mlx_clear_window(data->mlx.mlx, data->mlx.win);
 	draw_fractal(&data->mlx, &data->var);
 	mlx_put_image_to_window(data->mlx.mlx, data->mlx.win, data->mlx.img, 0, 0);
 	menu(&data->mlx);
+
+	return (0);
 }
 
 static void	pix_put_to_img(t_mlx *mlx, t_var *var, int *axle, int result)
