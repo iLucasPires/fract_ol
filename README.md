@@ -8,7 +8,7 @@ Frac-ol is a 42 school project. The goal of this project is to create a fractal 
 
 ## How to use
 - Clone the repository
-- Need to install MiniLibX documentation [here](https://github.com/42Paris/minilibx-linux) 
+- Need to install MiniLibX [here](https://github.com/42Paris/minilibx-linux) 
 - Run `make` to compile the executable
 - Run `./fractol [fractal]` to execute the program
 
