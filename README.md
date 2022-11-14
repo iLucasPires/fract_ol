@@ -19,8 +19,8 @@ Frac-ol is a 42 school project. The goal of this project is to create a fractal 
 - Copy the header file `mlx.h` in the root of the home directory
 
 ## Mandatory part
-- [x] The project must be written in accordance with the Norm.
 - [x] The executable file must be named fractol.
+- [x] The project must be written in accordance with the Norm.
 - [x] The executable must be able to display at least the Mandelbrot and Julia sets.
 - [x] The executable must be able to zoom in and out of the fractal using the mouse wheel.
 
