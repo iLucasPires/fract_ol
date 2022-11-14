@@ -22,11 +22,9 @@ Frac-ol is a 42 school project. The goal of this project is to create a fractal 
 - [x] The project must be written in accordance with the Norm.
 - [x] The executable file must be named fractol.
 - [x] The executable must be able to display at least the Mandelbrot and Julia sets.
-- [x] The executable must be able to display at least one other fractal of your choice.
 - [x] The executable must be able to zoom in and out of the fractal using the mouse wheel.
 
 ## Bonus part
-- [x] The executable must be able to change the number of iterations with the arrow keys.
 - [x] The executable must be able to change the color palette with the number keys.
 - [x] The executable must be able to move the fractal with the arrow keys.
 - [x] The executable must be able to lock the fractal on a point with the mouse.
