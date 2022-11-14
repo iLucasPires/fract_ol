@@ -52,11 +52,16 @@ Display the [Mandelbrot](https://en.wikipedia.org/wiki/Mandelbrot_set) set
 
 ![Example](./img.png)
 
+Display the [Julia](https://en.wikipedia.org/wiki/Julia_set) set
+
 ```bash
-./fractol julia complex_number complex_number # complex_number is a float
+./fractol julia complex_number complex_number 
 ```
 
 ![Example](./img2.png)
+
+
+Display the [Burning Ship](https://en.wikipedia.org/wiki/Burning_Ship_fractal) set
 
 ```bash
 ./fractol burningship
