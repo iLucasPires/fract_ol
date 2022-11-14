@@ -55,11 +55,10 @@ Display the [Mandelbrot](https://en.wikipedia.org/wiki/Mandelbrot_set) set
 Display the [Julia](https://en.wikipedia.org/wiki/Julia_set) set
 
 ```bash
-./fractol julia complex_number complex_number 
+./fractol julia 0.285 0.01
 ```
 
 ![Example](./img2.png)
-
 
 Display the [Burning Ship](https://en.wikipedia.org/wiki/Burning_Ship_fractal) set
 
