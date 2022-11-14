@@ -32,15 +32,17 @@ Frac-ol is a 42 school project. The goal of this project is to create a fractal 
 
 ## Example
 ```bash
-./fractol mandelbrot
+$ ./fractol mandelbrot
 ```
 ![Example](./img.png)
+
 ```bash
-./fractol julia complex_number complex_number # complex_number is a float
+$ ./fractol julia complex_number complex_number # complex_number is a float
 ```
 ![Example](./img2.png)
+
 ```bash
-./fractol burningship
+$ ./fractol burningship
 ```
 ![Example](./img3.png)
 
