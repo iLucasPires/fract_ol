@@ -28,15 +28,15 @@ The program will display different fractals and allow the user to zoom and chang
 - Copy the header file `mlx.h` from the root of the home directory
 
 ```bash
-$> sudo apt-get install gcc make xorg libxext-dev libbsd-dev
+sudo apt-get install gcc make xorg libxext-dev libbsd-dev
 ```
 
 ```bash
-$> cp libmlx.a /usr/local/lib/
+cp libmlx.a /usr/local/lib/
 ```
 
 ```bash
-$> cp mlx.h /usr/local/include/
+cp mlx.h /usr/local/include/
 ```
 
 ## Mandatory part
