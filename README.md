@@ -5,7 +5,7 @@
 <p align="center">
     <img src="https://img.shields.io/badge/OS-Linux-blue" alt="OS">
     <img src="https://img.shields.io/badge/Language-C%20%7C%20C%2B%2B-orange.svg" alt="Language">
-    <img src="https://img.shields.io/badge/Grade-115%2F100-brightgreen.svg" alt="Grade">
+    <img src="https://img.shields.io/badge/Grade-125%2F100-brightgreen.svg" alt="Grade">
     <img src="https://img.shields.io/badge/Status-Completed-brightgreen.svg" alt="Status">
 </p>
 
@@ -15,17 +15,29 @@ The program will display different fractals and allow the user to zoom and chang
 
 ## How to use
 
-- Clone the repository
-- Install the [MiniLibX](https://github.com/42Paris/minilibx-linux)
+- Clone the repository with `git clone https://github.com/iLucasPires/fract-ol.git`
+- You need to use [MiniLibX](https://github.com/42Paris/minilibx-linux)
 - Run `make` to compile the executable
 - Run `./fractol [fractal]` to execute the program
 
 ## Install MiniLibX
 
-- Clone the repository with `git clone git@github.com:vcwild/fract-ol.git`
+- Clone the repository with `https://github.com/42Paris/minilibx-linux.git`
 - Run `make` to compile the library need to install libbsd-dev libXext-dev
 - Copy the library `libmlx.a` from the root of the home directory
 - Copy the header file `mlx.h` from the root of the home directory
+
+```bash
+$> sudo apt-get install gcc make xorg libxext-dev libbsd-dev
+```
+
+```bash
+$> cp libmlx.a /usr/local/lib/
+```
+
+```bash
+$> cp mlx.h /usr/local/include/
+```
 
 ## Mandatory part
 
