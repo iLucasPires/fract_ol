@@ -9,7 +9,14 @@ Fractol is a project that allows you to discover fractals, mathematical sets tha
 ## How to use
 - Clone the repository
 - Run `make` or `make bonus` to compile the project
-- Run `./fractol mandelbrot` or `./fractol julia number number` or `./fractol burningship`
+
+## Usage
+
+```bash
+./fractol mandelbrot
+./fractol julia 0.285 0.01 # You can change the parameters
+./fractol burningship
+```
 
 ## Example
 ![Example](./img.png)
