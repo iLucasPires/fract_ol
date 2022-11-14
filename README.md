@@ -4,22 +4,47 @@
 
 ## Introduction
 
-Fractol is a project that allows you to discover fractals, mathematical sets that exhibit a repeating pattern displayed at every scale. It will enable you to explore complex mathematical concepts, such as continuous and discrete, as well as to take a first look at the concept of optimization in computer graphics. You will also discover your first graphic library: miniLibX. This project introduces you to the basics of graphics programming, and in particular how to place points in space, how to join them with segments and most importantly how to observe the scene from a particular viewpoint.
+Frac-ol is a 42 school project. The goal of this project is to create a fractal exploration program. The program will display different fractals and allow the user to zoom and change the color of the fractal.
 
 ## How to use
 - Clone the repository
-- Run `make` or `make bonus` to compile the project
+- Need to install MiniLibX documentation [here](https://github.com/42Paris/minilibx-linux) 
+- Run `make` to compile the executable
+- Run `./fractol [fractal]` to execute the program
 
-## Usage
+## Install MiniLibX
+- Clone the repository `git clone https://github.com/42Paris/minilibx-linux.git`
+- Run `make` to compile the library need to install libbsd-dev libXext-dev
+- Copy the library `libmlx.a` in the root of the home directory
+- Copy the header file `mlx.h` in the root of the home directory
 
-```bash
-./fractol mandelbrot
-./fractol julia 0.285 0.01 # You can change the parameters
-./fractol burningship
-```
+## Mandatory part
+- [x] The project must be written in accordance with the Norm.
+- [x] The executable file must be named fractol.
+- [x] The executable must be able to display at least the Mandelbrot and Julia sets.
+- [x] The executable must be able to display at least one other fractal of your choice.
+- [x] The executable must be able to zoom in and out of the fractal using the mouse wheel.
+
+## Bonus part
+- [x] The executable must be able to change the number of iterations with the arrow keys.
+- [x] The executable must be able to change the color palette with the number keys.
+- [x] The executable must be able to move the fractal with the arrow keys.
+- [x] The executable must be able to lock the fractal on a point with the mouse.
+- [x] The exacutable must be able to display at least one other fractal of your choice.
 
 ## Example
+```bash
+./fractol mandelbrot
+```
 ![Example](./img.png)
+```bash
+./fractol julia complex_number complex_number # complex_number is a float
+```
+![Example](./img2.png)
+```bash
+./fractol burningship
+```
+![Example](./img3.png)
 
 ## Supported fractals
 
@@ -35,3 +60,7 @@ Fractol is a project that allows you to discover fractals, mathematical sets tha
 - [x] `R` : Reset the view
 - [x] `C` : Change the color
 - [x] `Mouse Wheel` : Zoom in/out
+- [x] `left arrow` : Move the fractal to the left
+- [x] `right arrow` : Move the fractal to the right
+- [x] `up arrow` : Move the fractal up
+- [x] `down arrow` : Move the fractal down
