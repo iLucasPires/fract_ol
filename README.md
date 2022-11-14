@@ -25,23 +25,24 @@ Fractol is a project that allows you to discover fractals, mathematical sets tha
 ### General
 
 - [x] `ESC` : Quit the program
-- [x] `R` : Reset the view
-- [x] `+` : Increase the number of iterations
-- [x] `-` : Decrease the number of iterations
+- [] `R` : Reset the view
+- [] `C` : Change the color
+- [] `+` : Increase the number of iterations
+- [] `-` : Decrease the number of iterations
 - [x] `Mouse Wheel` : Zoom in/out
-- [x] `Left Click` : Zoom in
-- [x] `Right Click` : Zoom out
+- [] `Left Click` : Zoom in
+- [] `Right Click` : Zoom out
 
 ### Mandelbrot
 
-- [x] `W` : Increase the contrast
-- [x] `S` : Decrease the contrast
-- [x] `A` : Increase the color variation
-- [x] `D` : Decrease the color variation
-- [x] `Q` : Increase the color offset
-- [x] `E` : Decrease the color offset
+- [] `W` : Increase the contrast
+- [] `S` : Decrease the contrast
+- [] `A` : Increase the color variation
+- [] `D` : Decrease the color variation
+- [] `Q` : Increase the color offset
+- [] `E` : Decrease the color offset
 
 ### Julia
 
-- [x] `W` : Increase the contrast
-- [x] `S` : Decrease the
+- [] `W` : Increase the contrast
+- [] `S` : Decrease the
