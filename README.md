@@ -25,8 +25,8 @@ Fractol is a project that allows you to discover fractals, mathematical sets tha
 ### General
 
 - [x] `ESC` : Quit the program
-- [ ] `R` : Reset the view
-- [ ] `C` : Change the color
+- [x] `R` : Reset the view
+- [x] `C` : Change the color
 - [ ] `+` : Increase the number of iterations
 - [ ] `-` : Decrease the number of iterations
 - [x] `Mouse Wheel` : Zoom in/out
