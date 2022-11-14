@@ -29,7 +29,6 @@ The program will display different fractals and allow the user to zoom and chang
 
 ## Mandatory part
 
-- [x] The project must be written in accordance with the Norm.
 - [x] The executable file must be named fractol.
 - [x] The project must be written in accordance with the Norm.
 - [x] The executable must be able to display at least the Mandelbrot and Julia sets.
@@ -37,10 +36,22 @@ The program will display different fractals and allow the user to zoom and chang
 
 ## Bonus part
 
-- [x] The executable must be able to change the color palette with the number keys.
+- [x] The executable must be able to change the color palette.
 - [x] The executable must be able to move the fractal with the arrow keys.
 - [x] The executable must be able to lock the fractal on a point with the mouse.
 - [x] The exacutable must be able to display at least one other fractal of your choice.
+
+## Controls
+
+The following controls are available:
+
+<table>
+  <tr><td><strong>Controls</strong></td><td><strong>Action</strong></td></tr>
+  <tr><td><kbd>&nbsp;▲&nbsp;</kbd><kbd>&nbsp;◄&nbsp;</kbd><kbd>&nbsp;▼&nbsp;</kbd><kbd>&nbsp;►&nbsp;</kbd></td><td>Move</td></tr>
+  <tr><td><kbd>&nbsp;scroll wheel&nbsp;</kbd></td><td>Zoom in and out</td></tr>
+  <tr><td><kbd>&nbsp;esc&nbsp;</kbd> or close window</td><td>Quit fract-ol</td></tr>
+  <tr><td><kbd>&nbsp;C&nbsp;</kbd></td><td>Change color (only in Bonus)</td></tr>
+</table>
 
 ## Example
 
@@ -55,7 +66,7 @@ Display the [Mandelbrot](https://en.wikipedia.org/wiki/Mandelbrot_set) set
 Display the [Julia](https://en.wikipedia.org/wiki/Julia_set) set
 
 ```bash
-./fractol julia 0.285 0.01
+./fractol julia number number
 ```
 
 ![Example](./img2.png)
@@ -67,16 +78,3 @@ Display the [Burning Ship](https://en.wikipedia.org/wiki/Burning_Ship_fractal) s
 ```
 
 ![Example](./img3.png)
-
-## Controls
-
-The following controls are available for all fractals:
-
-- [x] `ESC` : Quit the program
-- [x] `R` : Reset the view
-- [x] `C` : Change the color
-- [x] `Mouse Wheel` : Zoom in/out
-- [x] `left arrow` : Move the fractal to the left
-- [x] `right arrow` : Move the fractal to the right
-- [x] `up arrow` : Move the fractal up
-- [x] `down arrow` : Move the fractal down
