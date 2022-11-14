@@ -1,16 +1,16 @@
+<p align="center">
+    <img src="https://game.42sp.org.br/static/assets/achievements/fract-olm.png">
+</p>
 
-<div align="center">
-
-<img src="img.png" width="200px" />
-
-[![forthebadge](https://forthebadge.com/images/badges/made-with-c.svg)](https://forthebadge.com)
-
-</div>
+<p align="center">
+    <img src="https://img.shields.io/badge/OS-Linux-blue" alt="OS">
+    <img src="https://img.shields.io/badge/Language-C%20%7C%20C%2B%2B-orange.svg" alt="Language">
+    <img src="https://img.shields.io/badge/Grade-115%2F100-brightgreen.svg" alt="Grade">
+    <img src="https://img.shields.io/badge/Status-Completed-brightgreen.svg" alt="Status">
+</p>
 
 # fract-ol
-
 Frac-ol is a 42 school project whose goal is to create a fractal explorer.
-
 The program will display different fractals and allow the user to zoom and change the color of the fractal.
 
 ## How to use
@@ -47,17 +47,19 @@ The program will display different fractals and allow the user to zoom and chang
 Display the [Mandelbrot](https://en.wikipedia.org/wiki/Mandelbrot_set) set
 
 ```bash
-$ ./fractol mandelbrot
+./fractol mandelbrot
 ```
 
 ![Example](./img.png)
+
 ```bash
-$ ./fractol julia complex_number complex_number # complex_number is a float
+./fractol julia complex_number complex_number # complex_number is a float
 ```
 
 ![Example](./img2.png)
+
 ```bash
-$ ./fractol burningship
+./fractol burningship
 ```
 
 ![Example](./img3.png)
