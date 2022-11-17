@@ -70,7 +70,7 @@ The following controls are available:
 Display the [Mandelbrot](https://en.wikipedia.org/wiki/Mandelbrot_set) set
 
 ```bash
-$> ./fractol mandelbrot
+./fractol mandelbrot
 ```
 
 ![Example](./img.png)
@@ -78,7 +78,7 @@ $> ./fractol mandelbrot
 Display the [Julia](https://en.wikipedia.org/wiki/Julia_set) set
 
 ```bash
-$> ./fractol julia number number
+./fractol julia number number
 ```
 
 ![Example](./img2.png)
@@ -86,7 +86,7 @@ $> ./fractol julia number number
 Display the [Burning Ship](https://en.wikipedia.org/wiki/Burning_Ship_fractal) set
 
 ```bash
-$> ./fractol burningship
+./fractol burningship
 ```
 
 ![Example](./img3.png)
