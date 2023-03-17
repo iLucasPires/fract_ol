@@ -9,7 +9,7 @@
     <img src="https://img.shields.io/badge/Status-Completed-brightgreen.svg" alt="Status">
 </p>
 
-# fract-ol
+# Fract-ol
 Frac-ol is a 42 school project whose goal is to create a fractal explorer.
 The program will display different fractals and allow the user to zoom and change the color of the fractal.
 
@@ -73,7 +73,7 @@ Display the [Mandelbrot](https://en.wikipedia.org/wiki/Mandelbrot_set) set
 ./fractol mandelbrot
 ```
 
-![Example](./img.png)
+![Example](./Img/img.png)
 
 Display the [Julia](https://en.wikipedia.org/wiki/Julia_set) set
 
@@ -81,7 +81,7 @@ Display the [Julia](https://en.wikipedia.org/wiki/Julia_set) set
 ./fractol julia number number
 ```
 
-![Example](./img2.png)
+![Example](./Img/img2.png)
 
 Display the [Burning Ship](https://en.wikipedia.org/wiki/Burning_Ship_fractal) set
 
@@ -89,4 +89,4 @@ Display the [Burning Ship](https://en.wikipedia.org/wiki/Burning_Ship_fractal) s
 ./fractol burningship
 ```
 
-![Example](./img3.png)
+![Example](./Img/img3.png)
